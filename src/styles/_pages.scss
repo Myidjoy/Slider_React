@@ -1,0 +1,23 @@
+.main-content__page {
+  max-width: 100%;
+  min-width: 100%;
+
+  &.main-content__page_first-page {
+    background-image: url('../img/background/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  &.main-content__page_second-page {
+    background-image: url('../img/background/background2.png');
+    background-size: 110% 105%;
+    background-repeat: no-repeat;
+  }
+
+  &.main-content__page_third-page {
+    
+    background-image: url('../img/background/background3.png');
+    background-size: 100% 105%;
+    background-repeat: no-repeat;
+  }
+}
