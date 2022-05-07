@@ -1,13 +1,11 @@
 import React from 'react';
-// import getElement from '../../helpers/functions';
 import { handler } from '../../helpers/functions';
 
 function Header({setPage}) {
 
   return (
     <header className='header'>
-      <div onClick={(event) => {
-        event.preventDefault();
+      <div onClick={() => {
         handler(1);
         setPage(1);
       }}

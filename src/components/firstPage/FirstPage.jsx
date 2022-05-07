@@ -14,8 +14,7 @@ function FirstPage({changePage}) {
           <li>ЗАДАНИЕ 
             <div 
               aria-hidden='true'
-              onClick={(event) => {
-                event.preventDefault();
+              onClick={() => {                
                 handler(2);              
                 changePage(2);
               }} 

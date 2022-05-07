@@ -73,11 +73,15 @@ function App() {
   return (
     <main 
       onScroll={() => null}
-      onTouchStart={(event) => { setPositionX(Math.round(event.touches[0].clientX)); }}
-      onTouchMove={(event) => { setPosition(Math.round(event.targetTouches[0].clientX));}}
-      onTouchEnd={() => {
+      onTouchStart={(event) => {         
+        setPositionX(Math.round(event.touches[0].clientX));
+      }}
+      onTouchMove={(event) => {         
+        setPosition(Math.round(event.targetTouches[0].clientX));                
+      }}
+      onTouchEnd={(event) => {        
         scrollCheck(positionX, position);
-        setPosition(0);
+        setPosition(0);                
       }}
       id='main'
       className='main-content'

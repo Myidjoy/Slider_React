@@ -1,5 +1,6 @@
 import React from 'react';
 import FirstPage from '../firstPage/FirstPage';
+import SecondPage from '../secondPage/SecondPage';
 
 function Page({name, id, changePage}) {
   
@@ -8,7 +9,9 @@ function Page({name, id, changePage}) {
       {
         id === 1
           ? <FirstPage changePage={changePage}/>:
-          null
+          id === 2
+            ? <SecondPage/>: 
+            null
       }
     </section>
   );
