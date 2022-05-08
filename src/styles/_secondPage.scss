@@ -13,52 +13,94 @@
     bottom: 0;
 
     .second-page-content__image_1 {
-      width: 1080px;
-      height: 556px;
+      width: 655px;
+      height: 288px;
       position: absolute;
+      top: 99px;
       right: 0;
       background-image: url('../img/second-page/Layer\ 3\ copy\ 6.png');
-      background-size: cover;
+      background-size: cover;      
+
+      &.active {
+        animation-name: image_1 ;
+        animation-delay: 0.2s;
+        animation-iteration-count: 1;
+        animation-duration: 1.6s;
+        animation-timing-function: ease;
+      }
     }
 
     .second-page-content__image_2 {
-      width: 910px;
-      height: 517px;
+      width: 441px;
+      height: 177px;
       position: absolute;
-      top: 50px;
+      top: 96px;
       right: 0;
       background-image: url('../img/second-page/Layer\ 3\ copy\ 2.png');
       background-size: cover;
+
+      &.active {
+        animation-name: image_2 ;
+        animation-delay: 0.3s;
+        animation-iteration-count: 1;
+        animation-duration: 1.6s;
+        animation-timing-function: ease;
+      }
     }
 
     .second-page-content__image_3 {
-      width: 660px;
-      height: 360px;
+      width: 270px;
+      height: 101px;
       position: absolute;
-      top: 50px;
-      right: 20px;
+      top: 74px;
+      right: 45.5px;
       background-image: url('../img/second-page/Layer\ 3\ copy\ 4.png');
       background-size: cover;
+      opacity: 0.6;
+
+      &.active {
+        animation-name: image_3 ;
+        animation-delay: 0.4s;
+        animation-iteration-count: 1;
+        animation-duration: 1.6s;
+        animation-timing-function: ease;
+      }
     }
 
     .second-page-content__image_4 {
-      width: 800px;
-      height: 1000px;
+      width: 134px;
+      height: 86px;
       position: absolute;
-      bottom: 230px;
+      bottom: 273px;
       right: 0px;
       background-image: url('../img/second-page/Layer\ 3\ copy\ 3.png');
-      background-size: 100%;
+      background-size: cover;
+
+      &.active {
+        animation-name: image_4 ;
+        animation-delay: 0.2s;
+        animation-iteration-count: 1;
+        animation-duration: 1.6s;
+        animation-timing-function: ease;
+      }
     }
 
     .second-page-content__image_5 {
-      width: 800px;
-      height: 1000px;
+      width: 136px;
+      height: 77px;
       position: absolute;
-      top: 150px;
+      bottom: 176px;
       right: 0px;
       background-image: url('../img/second-page/Layer\ 3\ copy\ 5.png');
-      background-size: 100%;
+      background-size: cover;
+
+      &.active {
+        animation-name: image_5 ;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-duration: 1.6s;
+        animation-timing-function: ease;
+      }
     }
   }
 
@@ -100,5 +142,64 @@
       font-size: 30px;
     }
 
+  }
+}
+
+@keyframes image_1 {
+  from {
+    right: -20%;
+    top: 40%;
+    opacity: 0;
+  }
+  to {
+      top: 99px;
+      right: 0;
+      opacity: 1;
+  }
+}
+@keyframes image_2 {
+  from {
+    right: -20%;
+    top: 40%;
+    opacity: 0;
+  }
+  to {
+    top: 96px;
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes image_3 {
+  from {
+    right: -20%;
+    top: 40%;
+    opacity: 0;
+  }
+  to {
+    top: 74px;
+    right: 45.5px;
+    opacity: 0.6;
+  }
+}
+@keyframes image_4{
+  from {
+    right: -20%;
+    opacity: 0;
+  }
+  to {
+    bottom: 273px;
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes image_5 {
+  from {
+    right: -20%;
+    opacity: 0;
+  }
+  to {
+    bottom: 176px;
+    right: 0px;
+    opacity: 1;
   }
 }

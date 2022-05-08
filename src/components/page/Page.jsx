@@ -3,7 +3,7 @@ import FirstPage from '../firstPage/FirstPage';
 import SecondPage from '../secondPage/SecondPage';
 import ThirdPage from '../thirdPage/ThirdPage';
 
-function Page({name, id, changePage}) {
+function Page({name, id, changePage, page}) {
   
   return (
     <section className={name}>
@@ -11,7 +11,7 @@ function Page({name, id, changePage}) {
         id === 1
           ? <FirstPage changePage={changePage}/>:
           id === 2
-            ? <SecondPage/>: 
+            ? <SecondPage page={page}/>: 
             id === 3
               ? <ThirdPage/>:
               null

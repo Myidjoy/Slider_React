@@ -1,10 +1,11 @@
 import React from 'react';
 import PicturesSecond from '../pictures/PicturesSecond';
 
-function SecondPage() {
+function SecondPage({page}) {
+  
   return (
     <section className='second-page-content'>
-      <PicturesSecond/>
+      <PicturesSecond page={page}/>
       <span className='second-page-content__text_header'>ТЕКСТ<br/> СООБЩЕНИЯ</span>
       <section 
         onTouchEnd={(event) => {

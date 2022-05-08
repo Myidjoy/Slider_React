@@ -79,7 +79,7 @@ function App() {
       onTouchMove={(event) => {         
         setPosition(Math.round(event.targetTouches[0].clientX));                
       }}
-      onTouchEnd={(event) => {        
+      onTouchEnd={() => {        
         scrollCheck(positionX, position);
         setPosition(0);                
       }}
@@ -87,7 +87,7 @@ function App() {
       className='main-content'
     >
       <Header setPage={setCurrentPage}/>
-      {pages.map((page) => <Page key={page.id} name={page.name} id={page.id} changePage={setCurrentPage} /> )}
+      {pages.map((page) => <Page key={page.id} name={page.name} id={page.id} changePage={setCurrentPage} page={currentPage}/> )}
       <Footer/>
     </main>    
   );

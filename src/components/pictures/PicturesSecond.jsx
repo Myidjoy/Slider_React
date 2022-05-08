@@ -1,6 +1,7 @@
 import React from 'react';
 
 function PicturesSecond() {
+  
   return (
     <section className='second-page-content__pictures'>
       <figure className='second-page-content__image_1'/>
@@ -11,5 +12,19 @@ function PicturesSecond() {
     </section>
   );
 };
+const getAllFigure = () => document.querySelectorAll('.second-page-content__pictures figure');
 
-export default PicturesSecond;
+const wrapperPicturesSecond = Component => function({page}) {
+  if(page === 2) {
+    getAllFigure().
+      forEach(element => element.classList.add('active'));
+  } else {
+    getAllFigure().
+      forEach(element => element.classList.remove('active'));
+  }
+
+  return <Component/>;
+};
+
+const HOC = wrapperPicturesSecond(PicturesSecond);
+export default HOC;
