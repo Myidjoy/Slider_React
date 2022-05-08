@@ -21,6 +21,7 @@ function FirstPage({changePage}) {
               className='first-page-content__text_button'
             >
               <span>Что дальше ?</span>
+              <span className='first-page-content__text_arrow'>&#8594;</span>
             </div>
           </li>
         </ul>

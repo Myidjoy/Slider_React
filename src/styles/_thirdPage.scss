@@ -1,0 +1,261 @@
+.third-page-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .third-page-content__pictures {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .third-page-content__image_1 {
+      position: relative;
+      left: 50px;
+      bottom: -90px;
+      width: 233px;
+      height: 690px;
+      background-image: url('../img/third-page/bubbles/bottle.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+
+    .third-page-content__image_2 {
+      position: absolute;
+      bottom: 140px;
+      left: 25px;
+      width: 76px;
+      height: 76px;
+      background-image: url('../img/third-page/bubbles/8.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .third-page-content__image_3 {
+      position: absolute;
+      bottom: 281px;
+      left: 11px;
+      width: 30px;
+      height: 30px;
+      background-image: url('../img/third-page/bubbles/7.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .third-page-content__image_4 {
+      position: absolute;
+      bottom: 0px;
+      left: 184px;
+      width: 139px;
+      height: 60px;
+      background-image: url('../img/third-page/bubbles/6.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    .third-page-content__image_5 {
+      position: absolute;
+      top: 155.5px;
+      left: 184px;
+      width: 70px;
+      height: 70px;
+      background-image: url('../img/third-page/bubbles/5.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    .third-page-content__image_6 {
+      position: absolute;
+      bottom: 117px;
+      left: 243px;
+      width: 63px;
+      height: 63px;
+      background-image: url('../img/third-page/bubbles/4.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .third-page-content__image_7 {
+      position: absolute;
+      top: 67px;
+      left: 199px;
+      width: 37px;
+      height: 37px;
+      background-image: url('../img/third-page/bubbles/3.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .third-page-content__image_8 {
+      position: absolute;
+      top: 318px;
+      left: 195px;
+      width: 115px;
+      height: 115px;
+      background-image: url('../img/third-page/bubbles/2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .third-page-content__image_9 {
+      position: absolute;
+      top: 213px;
+      left: 92px;
+      width: 34px;
+      height: 34px;
+      background-image: url('../img/third-page/bubbles/1.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .third-page-content__text-top {
+    display: inline-block;
+    position: relative;
+    top: 170px;
+    left: 353px;
+
+    .third-page-content__text-top_1 {
+      display: block;
+      font-size: 30px;
+      font-weight: 200;
+    }
+
+    .third-page-content__text-top_2 {
+      display: block;
+      font-size: 80px;
+      font-weight: 300;
+      letter-spacing: 12px;
+
+      strong {
+        font-size: 80px;
+      }
+    }
+    
+  }
+
+  .third-page-content__big-table {
+    width: 416px;
+    height: 301px;
+    position: absolute;
+    top: 346px;
+    left: 228px;
+
+    figure {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 65.5px;
+      height: 65.5px;
+      background-image: url('../img/third-page/icon2.png');
+      background-size: contain;
+      background-repeat: no-repeat; 
+      z-index: 1;
+    }
+
+    div {
+      background: white;
+      position: absolute;
+      top: 32.75px;
+      width: 416px;
+      height: 268px;
+      border-radius: 30px;
+      padding: 60px 24px 0 125px ;
+      box-shadow: 0 0 125px #9db9c640;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .third-page-content__small-table {
+    width: 266.5px;
+    height: 176px;
+    position: absolute;
+    top: 354.5px;
+    left: 681px;
+
+    figure {
+      display: inline-block;
+      position: relative;
+      left: 84px;
+      transform: translateX(-50%);
+      width: 71px;
+      height: 60px;
+      background-image: url('../img/third-page/icon1.png');
+      background-size: contain;
+      background-repeat: no-repeat; 
+      z-index: 1;
+    }
+
+    div {
+      background: white;
+      position: absolute;
+      top: 30px;
+      width: 266.5px;
+      height: 150px;
+      border-radius: 40px;
+      padding: 60px 92px 49px 45px ;
+      box-shadow: 0 0 60px #9db9c637;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .third-page-content__text_button {
+    position: absolute;
+    top: 564.5px;
+    right: 80px;
+    width: 265.5px;
+    height: 80px;
+    background: #ff6a9f;      
+    border-radius: 40px;
+
+    
+    
+    span {
+      position: absolute;
+      top: 50%;
+      left: 90px;
+      transform: translateY(-50%);
+      font-size: 25px;
+      font-weight: 300;
+      letter-spacing: 1px;
+
+      &.third-page-content__text_plus {
+        position: absolute;
+        top: 47%;
+        left: 35px;
+        color: white;
+        transform: translateY(-50%);
+        font-size: 2rem;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: relative;
+      color: white;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 49px;
+      height: 49px;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background: rgb(0, 0, 0);
+      box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.663), -2px -2px 3px #913f63;
+    }
+  }
+}

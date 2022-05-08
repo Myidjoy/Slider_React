@@ -138,10 +138,19 @@
           font-size: 25px;
           font-weight: 300;
           letter-spacing: 1px;
+
+          &.first-page-content__text_arrow {
+            position: absolute;
+            top: 47%;
+            left: 29px;
+            color: white;
+            transform: translateY(-50%);
+            font-size: 2rem;
+          }
         }
 
         &::before {
-          content: '\2192';
+          content: '';
           position: relative;
           color: white;
           font-size: 30px;
