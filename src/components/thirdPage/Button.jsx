@@ -1,14 +1,23 @@
 import React from 'react';
 
-function Button() {
+function Button({status, changeStatus}) {
+
   return (
-    <div 
-      aria-hidden='true'
-      className='third-page-content__text_button'
-    >
-      <span>Подробнее</span>
-      <span className='third-page-content__text_plus'>+</span>
-    </div>
+    !status
+      ? (
+        <div 
+          onClick={(event) => {
+            event.stopPropagation();
+            changeStatus(!status);
+            
+          }}
+          aria-hidden='true'
+          className='third-page-content__text_button'
+        >
+          <span>Подробнее</span>
+          <span className='third-page-content__text_plus'>+</span>
+        </div>): 
+      null
   );
 };
 
