@@ -75,6 +75,7 @@
       background-image: url('../img/first-page/Layer\ 4.png');
       background-size: contain;
       background-repeat: no-repeat;
+      animation: resize 10s linear infinite;
     }
 
     .first-page-content__image_7 {
@@ -169,5 +170,28 @@
       }
     }
    }
+  }
+}
+
+@keyframes resize {
+  0% {
+    width: 230px;
+    height: 230px;
+  }
+  25% {
+    width: 172.5px;
+    height: 172.5px;
+  }
+  50% {
+    width: 115px;
+    height: 115px;
+  }
+  75% {
+    width: 172.5px;
+    height: 172.5px;
+  }
+  100% {
+    width: 230px;
+    height: 230px;
   }
 }

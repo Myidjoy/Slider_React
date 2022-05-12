@@ -1,30 +1,74 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Transition } from 'react-transition-group';
 
-function PicturesSecond() {
-  
+const durationStart = 2100;
+const durationEnd = 350;
+
+function PicturesSecond({page}) {
+  const [animationStart, setAnimationStart] = useState(false);
+
+  useEffect(() => {
+    if(page === 2 ) {
+      setAnimationStart(!animationStart);
+    } else {
+      setAnimationStart(false);
+    }
+  },[page]);
+
   return (
     <section className='second-page-content__pictures'>
-      <figure className='second-page-content__image_1'/>
-      <figure className='second-page-content__image_2'/>
-      <figure className='second-page-content__image_3'/>
-      <figure className='second-page-content__image_4'/>
-      <figure className='second-page-content__image_5'/>
+      <Transition in={animationStart} timeout={{
+        enter: durationStart,
+        exit: durationEnd
+      }}>
+        {
+          state => (
+            <figure className={`second-page-content__image_1 second-page-content__image_1_${state}`}/>
+          )
+        }
+      </Transition>
+      <Transition in={animationStart} timeout={{
+        enter: durationStart,
+        exit: durationEnd
+      }}>
+        {
+          state => (
+            <figure className={`second-page-content__image_2 second-page-content__image_2_${state}`}/>
+          )
+        }
+      </Transition>
+      <Transition in={animationStart} timeout={{
+        enter: durationStart,
+        exit: durationEnd
+      }}>
+        {
+          state => (
+            <figure className={`second-page-content__image_3 second-page-content__image_3_${state}`}/>
+          )
+        }
+      </Transition>
+      <Transition in={animationStart} timeout={{
+        enter: durationStart,
+        exit: durationEnd
+      }}>
+        {
+          state => (
+            <figure className={`second-page-content__image_4 second-page-content__image_4_${state}`}/>
+          )
+        }
+      </Transition>
+      <Transition in={animationStart} timeout={{
+        enter: durationStart,
+        exit: durationEnd
+      }}>
+        {
+          state => (
+            <figure className={`second-page-content__image_5 second-page-content__image_5_${state}`}/>
+          )
+        }
+      </Transition>
     </section>
   );
 };
-const getAllFigure = () => document.querySelectorAll('.second-page-content__pictures figure');
 
-const wrapperPicturesSecond = Component => function({page}) {
-  if(page === 2) {
-    getAllFigure().
-      forEach(element => element.classList.add('active'));
-  } else {
-    getAllFigure().
-      forEach(element => element.classList.remove('active'));
-  }
-
-  return <Component/>;
-};
-
-const HOC = wrapperPicturesSecond(PicturesSecond);
-export default HOC;
+export default PicturesSecond;
