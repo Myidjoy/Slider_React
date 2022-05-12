@@ -51,7 +51,7 @@ const wrapperApp = Component => function({pages}) {
     setWidthClient(element.clientWidth);
     setScrollWidth(element.scrollWidth);
     setPagesCount(pages.length);
-  }, []);
+  });
 
   const currentPages = pages.map((page) => (
     <Page 
